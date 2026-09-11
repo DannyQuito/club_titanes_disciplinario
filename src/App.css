@@ -1,0 +1,215 @@
+.box_index{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:12px;
+  border-radius:20px;
+
+  background-image: url('./assets/wallpaper_one.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height:100vh;
+
+  position: relative;
+}
+
+.main_one{
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  text-align: center; /* Centra el texto de los h1 */
+  width: 100%;
+  padding-top: 20px;
+  
+}
+
+.main_one h1{
+  font-size:3rem;
+  font-family:sans-serif;
+  font-weight:800;
+}
+
+.logo_club{
+  position: absolute;
+  top:10px;
+  left:10px;
+  display:flex;
+}
+
+.logo_club img{
+  border-radius: 50px;
+  width: 250px;
+  height: auto;
+}
+
+
+
+
+/*---------------------------------------*/
+.info_box_container{
+  display: flex;
+  gap:30px;
+  margin-top: 60px;
+}
+
+.info_lef{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  width: auto;
+  padding:10px;
+  border-radius:20px;
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
+.video-drive{
+  width: 720px;
+  height: 410px;
+  border: none;
+  border-radius:20px;
+}
+
+.info_lef a{
+  font-size: 3.30rem;
+  font-family: Arial;
+  color: rgb(0, 238, 255);
+  font-weight: bold;
+  
+}
+
+.text_how{
+  text-align:center;
+}
+
+.info_lef p{
+  color:rgb(253, 253, 253);
+  font-size: 2.30rem;
+  font-weight: bold;
+}
+
+.info_one{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  padding:10px;
+  border-radius:20px;
+  background-color: rgba(0, 0, 0, 0.55);
+}
+.info_one p{
+  color:rgb(253, 253, 253);
+  font-size: 2.30rem;
+  font-weight: bold;
+}
+
+
+.info_one label{
+  color:white;
+  font-size: 3.50rem;
+  font-weight: bold;
+}
+
+.info_one a{
+  color:rgb(255, 110, 183);
+  font-size: 2.30rem;
+}
+
+.contacts {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  padding:10px;
+}
+
+.contacts img{
+  width: 200px;
+}
+
+.contacts p{
+  font-size: 2rem;
+}
+
+/* Controla el tamaño del icono de WhatsApp */
+.img_whatsapp {
+  width: 80px;      /* Tamaño perfecto para que no se vea gigante */
+  height: auto;
+  transition: transform 0.2s ease; /* (Opcional) Hace que se anime al pasar el mouse */
+}
+
+/* 💡 Efecto visual extra al pasar el mouse */
+.link_wats:hover .img_whatsapp {
+  transform: scale(1.1); /* Agranda el logo un 10% cuando pasas el mouse por encima */
+}
+
+
+/*---------------------------------------*/
+
+
+@media (max-width: 768px) {
+  .logo_club {
+    position: static; /* El logo vuelve al flujo normal */
+    margin-bottom: 1px; /* Deja espacio con el título de abajo */
+  }
+
+  .logo_club img {
+    width: 150px; /* En celular el logo debe ser más pequeño */
+  }
+
+  .main_one h1 {
+    font-size: 2.1rem; /* Letras más pequeñas para que quepan en el celular */
+  }
+  .info_box_container {
+    flex-direction: column; /* 👈 Cambia de fila a columna solo en celulares */
+    align-items: center;    /* Centra el video y el texto uno abajo del otro */
+    gap: 30px;              /* Espacio de separación vertical entre ambos */
+    margin-top: 20px;       /* En celular no necesitas un margen tan grande como 60px */
+  }
+  .video-drive {
+    width: 100%;       /* 👈 En celulares le dice: ocupa todo el ancho del teléfono */
+    max-width: 400px;  /* No permitas que se estire feo en pantallas mini */
+    height: 250px;     /* Reduce la altura para que encaje en el celular */
+  }
+
+  .info_lef a{
+    font-size: 2.10rem;
+    font-family: Arial;
+    color: rgb(15, 230, 238);
+    font-weight: bold;
+  }
+
+  .info_one {
+    width: 90%;          /* Asegura que la caja negra no se desborde del celular */
+    padding: 15px;       /* Un pequeño colchón para que el texto no toque las esquinas */
+    box-sizing: border-box;
+    text-align: center;  /* Centra el texto para un look más limpio en móvil */
+  }
+
+  .info_one label {
+    font-size: 1.6rem;   /* Bajamos de 3.50rem a un tamaño perfecto para celular */
+  }
+
+  .info_one p {
+    font-size: 1.1rem;   /* Bajamos de 2.30rem a un tamaño de lectura cómodo */
+  }
+
+  .info_one a {
+    font-size: 1.1rem;   /* El link ahora va acorde al tamaño del párrafo */
+  }
+
+  .info_lef p{
+    color:rgb(253, 253, 253);
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+
+  .contacts img{
+    width: 70px;
+  }
+
+  .contacts p{
+    font-size: 1.40rem;
+    color:rgb(253, 253, 253);
+    font-weight: bold;
+  }
+
+}
