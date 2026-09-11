@@ -4,7 +4,7 @@ function Info_one(){
         <div className="info_box_container">
             <div className="info_lef">
                 <Link to="/horarios" className="boton-navegacion">
-                    Ver Horarios del Club
+                    Ver Todos los videos
                 </Link>
                 <iframe 
                     src="https://drive.google.com/file/d/1qjkB2odiGUMx_pSpWQ_xn7YIy9zShxOU/preview" 
