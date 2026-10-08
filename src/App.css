@@ -61,6 +61,8 @@
   padding:10px;
   border-radius:20px;
   background-color: rgba(0, 0, 0, 0.55);
+  max-width: 2400px;  /* No permitas que se estire feo en pantallas mini */
+  height: 1150px;
 }
 
 .video-yt{
@@ -167,13 +169,14 @@
   }
 
   .main_one h1 {
-    font-size: 2.1rem; /* Letras más pequeñas para que quepan en el celular */
+    font-size: 1.2rem; /* Letras más pequeñas para que quepan en el celular */
   }
   .info_box_container {
     flex-direction: column; /* 👈 Cambia de fila a columna solo en celulares */
     align-items: center;    /* Centra el video y el texto uno abajo del otro */
     gap: 30px;              /* Espacio de separación vertical entre ambos */
     margin-top: 20px;       /* En celular no necesitas un margen tan grande como 60px */
+    
   }
 
   .text_how{
@@ -197,6 +200,10 @@
     height: 250px;     /* Reduce la altura para que encaje en el celular */
   }
 
+  .info_lef{
+    max-width: 380px;  /* No permitas que se estire feo en pantallas mini */
+    height: 800px;
+  }
   .info_lef a{
     font-size: 2.10rem;
     font-family: Arial;
