@@ -1,0 +1,82 @@
+.schelude_videos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap:12px;
+    border-radius:20px;
+
+    background-image: url('./assets/wallpaper_one.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height:100vh;
+}
+
+.schelude_videos h1{
+    font-size: 2rem;
+}
+
+.schelude_link_regresar{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.schelude_videos p{
+    font-size: 2rem;
+}
+
+.box_video{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    gap:12px;
+    border-radius:20px;
+}
+
+.video-yt{
+    width: 350px;
+    height: 200px;
+}
+
+/*SOLO EN MOVILES*/
+@media (max-width: 768px) {
+
+    .schelude_videos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap:12px;
+    border-radius:20px;
+    }
+
+    .box_video{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap:12px;
+    border-radius:20px;
+    }
+    .video-yt {
+        width: 100%;       /* 👈 En celulares le dice: ocupa todo el ancho del teléfono */
+        max-width: 400px;  /* No permitas que se estire feo en pantallas mini */
+        height: 225px;     /* Reduce la altura para que encaje en el celular */
+    }
+
+    .schelude_videos h1{
+    font-size: 2rem;
+    }
+
+    .schelude_link_regresar{
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .schelude_videos p{
+        font-size: 2rem;
+    }
+
+}
